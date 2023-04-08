@@ -1,16 +1,10 @@
-import {
-  Container,
-  Group,
-  Text,
-  Rating,
-  Tabs,
-  SimpleGrid,
-} from '@mantine/core';
+import { Container, Tabs, SimpleGrid } from '@mantine/core';
 import { IconPhoto, IconRss, IconStars } from '@tabler/icons-react';
 import ContentBox from '@/components/ContentBox';
 import AppBar from '@/components/AppBar';
 import Info from '@/components/profile/Info';
 import Stats from '@/components/profile/Stats';
+import Feed from '@/components/feed/Feed';
 
 export default function Profile() {
   return (
@@ -44,10 +38,7 @@ export default function Profile() {
               </Tabs.List>
 
               <Tabs.Panel value='feed' pt='xs'>
-                <SimpleGrid cols={2}>
-                  <div>1</div>
-                  <div>2</div>
-                </SimpleGrid>
+                <Feed />
               </Tabs.Panel>
 
               <Tabs.Panel value='gallery' pt='xs'>
