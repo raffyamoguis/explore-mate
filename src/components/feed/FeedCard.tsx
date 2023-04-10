@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDisclosure } from '@mantine/hooks';
+import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import {
   Card,
   Group,
@@ -34,6 +34,7 @@ interface Props {
 
 const FeedCard: React.FC<Props> = ({ name, content }) => {
   const [opened, { open, close }] = useDisclosure(false);
+  const smallScreen = useMediaQuery('(max-width: 36rem)');
 
   return (
     <>
@@ -82,7 +83,7 @@ const FeedCard: React.FC<Props> = ({ name, content }) => {
           </SimpleGrid>
         </Card.Section>
 
-        <Group position='center' spacing={200} mt='md'>
+        <Group position='center' spacing={smallScreen ? 20 : 200} mt='md'>
           <ButtonLabel icon={<IconHeart />} label='2k' />
           <ButtonLabel
             icon={<IconMessageCircle />}
