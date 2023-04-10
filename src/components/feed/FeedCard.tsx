@@ -83,15 +83,21 @@ const FeedCard: React.FC<Props> = ({ name, content }) => {
         </Card.Section>
 
         <Group position='center' spacing={200} mt='md'>
-          <ButtonLabel icon={<IconHeart />} label='2k' onClick={open} />
-          <ButtonLabel icon={<IconMessageCircle />} label='20k' />
+          <ButtonLabel icon={<IconHeart />} label='2k' />
+          <ButtonLabel
+            icon={<IconMessageCircle />}
+            label='20k'
+            onClick={open}
+          />
         </Group>
       </Card>
       <CommentBox
         opened={opened}
         close={close}
-        title='Authentication'
-        content={<Text>Heelo</Text>}
+        title='Comments'
+        size='lg'
+        content={<Text>Hello</Text>}
+        withCloseButton={false}
       />
     </>
   );
