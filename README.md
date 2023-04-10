@@ -1,3 +1,4 @@
+<p align="center"> <img alt="Consumet" src="https://user-images.githubusercontent.com/86818651/230705258-cc091bf0-ca7f-41c5-b211-49c6ec4a1bcb.png" width="150"></p>
 <h1 align='center'>ExploreMate</h1>
 <p align='center'>This project is designed to help you explore your destination like a local. With a curated list of interesting places, popular restaurants, and exciting events, our app takes the guesswork out of travel planning. Best of all, our application is web-based, making it accessible from anywhere. So whether you're on your laptop, tablet or mobile device, you can easily access our app and start exploring your destination with ease.</p>
 
