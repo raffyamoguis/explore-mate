@@ -5,6 +5,7 @@ import AppBar from '@/components/AppBar';
 import Info from '@/components/profile/Info';
 import Stats from '@/components/profile/Stats';
 import Feed from '@/components/feed/Feed';
+import Gallery from '@/components/gallery/Gallery';
 
 export default function Profile() {
   return (
@@ -42,7 +43,7 @@ export default function Profile() {
               </Tabs.Panel>
 
               <Tabs.Panel value='gallery' pt='xs'>
-                Messages tab content
+                <Gallery />
               </Tabs.Panel>
 
               <Tabs.Panel value='settings' pt='xs'>
