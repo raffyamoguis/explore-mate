@@ -8,8 +8,19 @@ import {
   Image,
   SimpleGrid,
   rem,
+  Button,
+  Flex,
 } from '@mantine/core';
-import { IconDots, IconEye, IconFileZip, IconTrash } from '@tabler/icons-react';
+import {
+  IconDots,
+  IconEye,
+  IconFileZip,
+  IconHeart,
+  IconMessageCircle,
+  IconMessageCircle2,
+  IconTrash,
+} from '@tabler/icons-react';
+import ButtonLabel from '../ButtonLabel';
 
 const images = [
   'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=250&q=80',
@@ -68,6 +79,11 @@ const FeedCard: React.FC<Props> = ({ name, content }) => {
           ))}
         </SimpleGrid>
       </Card.Section>
+
+      <Group position='center' spacing={200} mt='md'>
+        <ButtonLabel icon={<IconHeart />} label='2k' />
+        <ButtonLabel icon={<IconMessageCircle />} label='20k' />
+      </Group>
     </Card>
   );
 };
