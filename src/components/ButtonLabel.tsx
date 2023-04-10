@@ -4,16 +4,15 @@ import { Flex, ActionIcon, Text } from '@mantine/core';
 interface Props {
   icon: JSX.Element;
   label: string;
+  onClick?: () => void;
 }
-const ButtonLabel: React.FC<Props> = ({ icon, label }) => {
+const ButtonLabel: React.FC<Props> = ({ icon, label, ...props }) => {
   return (
     <Flex align='center' gap={10}>
-      <ActionIcon radius='xl' onClick={() => console.log('Button Clicked..')}>
+      <ActionIcon radius='xl' onClick={props.onClick}>
         {icon}
       </ActionIcon>
-      <Text color='gray' onClick={() => console.log('Text clicked..')}>
-        {label}
-      </Text>
+      <Text color='gray'>{label}</Text>
     </Flex>
   );
 };
