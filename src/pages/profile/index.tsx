@@ -10,7 +10,7 @@ import Reviews from '@/components/review/Reviews';
 
 export default function Profile() {
   return (
-    <AppBar>
+    <AppBar title='Profile | ExploreMate'>
       <Container>
         <ContentBox>
           <>

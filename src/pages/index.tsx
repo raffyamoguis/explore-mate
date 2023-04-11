@@ -3,7 +3,7 @@ import { Title, Container } from '@mantine/core';
 
 export default function Home() {
   return (
-    <AppBar>
+    <AppBar title='Home | ExploreMate'>
       <Container>
         <Title>Hello World</Title>
       </Container>
