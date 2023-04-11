@@ -1,5 +1,5 @@
 import React from 'react';
-import { SimpleGrid, Image, Container, Button, Center } from '@mantine/core';
+import { SimpleGrid, Image, Container, Loader, Center } from '@mantine/core';
 
 const images = [
   'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=250&q=80',
@@ -52,10 +52,9 @@ const Gallery: React.FC = () => {
         ))}
       </SimpleGrid>
 
+      {/* A loader to show when loading more images */}
       <Center mt='lg'>
-        <Button variant='filled' color='blue' radius='xl'>
-          Load More
-        </Button>
+        <Loader variant='dots' />
       </Center>
     </Container>
   );

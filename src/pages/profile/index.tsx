@@ -6,6 +6,7 @@ import Info from '@/components/profile/Info';
 import Stats from '@/components/profile/Stats';
 import Feed from '@/components/feed/Feed';
 import Gallery from '@/components/gallery/Gallery';
+import Reviews from '@/components/review/Reviews';
 
 export default function Profile() {
   return (
@@ -47,7 +48,7 @@ export default function Profile() {
               </Tabs.Panel>
 
               <Tabs.Panel value='settings' pt='xs'>
-                Settings tab content
+                <Reviews />
               </Tabs.Panel>
             </Tabs>
           </>
